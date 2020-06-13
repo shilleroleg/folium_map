@@ -1,2 +1,6 @@
 /.idea
 /venv
+*.xls
+*.xlsx
+*.csv
+*.html

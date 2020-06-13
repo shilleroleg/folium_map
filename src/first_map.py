@@ -1,15 +1,28 @@
 import folium
 from folium.plugins import MarkerCluster
 import openpyxl as oxl
+import xlrd
 import datetime
 
 
 def read_gas_list(file_name):
-    workb = oxl.load_workbook(filename=file_name, read_only=True, data_only=True)
-    # Загружаем активный лист
-    ws = workb.active
-    # Получаем максимальное количество заполненных строк
-    m_rows = ws.max_row
+    # Расширение файла
+    file_ext = file_name.split(".")[-1]
+
+    if file_ext == "xls":
+        workb = xlrd.open_workbook(file_name)
+        # Загружаем активный лист
+        ws = workb.sheet_by_index(0)
+        # Получаем максимальное количество заполненных строк
+        m_rows = ws.nrows
+        xlsx_col = -1  # В openpyxl отсчет столбцов начинается с 1, в xlrd с 0
+    elif file_ext == "xlsx":
+        workb = oxl.load_workbook(filename=file_name, read_only=True, data_only=True)
+        # Загружаем активный лист
+        ws = workb.active
+        # Получаем максимальное количество заполненных строк
+        m_rows = ws.max_row
+        xlsx_col = 0  # В openpyxl отсчет столбцов начинается с 1, в xlrd с 0
 
     brand = []
     longitude = []
@@ -23,19 +36,19 @@ def read_gas_list(file_name):
         if cur_row % 100 == 0:
             print(cur_row)
 
-        lon = ws.cell(cur_row, 9).value
-        lat = ws.cell(cur_row, 10).value
+        lon = ws.cell(cur_row, 9 + xlsx_col).value
+        lat = ws.cell(cur_row, 10 + xlsx_col).value
         if lon == 0 or lat == 0 or lon == [] \
-           or lon < 70 or lon > 100:
+           or lon < 57 or lon > 180:
             cur_row += 1
             continue
         else:
             longitude.append(lon)
             latitude.append(lat)
 
-        brand.append(ws.cell(cur_row, 8).value)
-        address.append(ws.cell(cur_row, 20).value)
-        diesel.append(True if ws.cell(cur_row, 11).value == "+" else False)
+        brand.append(ws.cell(cur_row, 8 + xlsx_col).value)
+        address.append(ws.cell(cur_row, 20 + xlsx_col).value)
+        diesel.append(True if ws.cell(cur_row, 11 + xlsx_col).value == "+" else False)
 
         cur_row += 1
 
@@ -74,10 +87,10 @@ def create_map(brand, longitude, latitude, address, diesel):
 
 if __name__ == "__main__":
     start1 = datetime.datetime.now()
-    brand, longitude, latitude, address, diesel = read_gas_list("gas list.xlsx")
+    brand, longitude, latitude, address, diesel = read_gas_list("gas list.xls")
     print("Время выполнения 1: " + str(datetime.datetime.now() - start1))
     print(len(latitude))
 
     start2 = datetime.datetime.now()
-    # create_map(brand, longitude, latitude, address, diesel)
+    create_map(brand, longitude, latitude, address, diesel)
     print("Время выполнения 2: " + str(datetime.datetime.now() - start2))
