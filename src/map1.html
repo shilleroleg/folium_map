@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_f81fdacdb4dd459587a487e78b857c13 {
+                #map_deb708e466a24b0e9b684b1ca17c7d8e {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -38,17 +38,17 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_f81fdacdb4dd459587a487e78b857c13" ></div>
+            <div class="folium-map" id="map_deb708e466a24b0e9b684b1ca17c7d8e" ></div>
         
 </body>
 <script>    
     
-            var map_f81fdacdb4dd459587a487e78b857c13 = L.map(
-                "map_f81fdacdb4dd459587a487e78b857c13",
+            var map_deb708e466a24b0e9b684b1ca17c7d8e = L.map(
+                "map_deb708e466a24b0e9b684b1ca17c7d8e",
                 {
                     center: [54.9893, 82.907],
                     crs: L.CRS.EPSG3857,
-                    zoom: 11,
+                    zoom: 7,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -58,78 +58,521 @@
 
         
     
-            var tile_layer_51e67dac06694fd59f147bfdb86f6c41 = L.tileLayer(
+            var tile_layer_5893f4c061d84d359e604ed71b88d28e = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_f81fdacdb4dd459587a487e78b857c13);
+            ).addTo(map_deb708e466a24b0e9b684b1ca17c7d8e);
         
     
-            var marker_cluster_e53a102e64d84bd8990294d6c1c3725d = L.markerClusterGroup(
+            var marker_cluster_80916b53c6624459b234369991106910 = L.markerClusterGroup(
                 {}
             );
-            map_f81fdacdb4dd459587a487e78b857c13.addLayer(marker_cluster_e53a102e64d84bd8990294d6c1c3725d);
+            map_deb708e466a24b0e9b684b1ca17c7d8e.addLayer(marker_cluster_80916b53c6624459b234369991106910);
         
     
-            var marker_b6d53bee9c5e4b8787bf16efc10d7829 = L.marker(
-                [55.0017, 83.0076],
+            var marker_15d56ce028f64bfc80fd60a6513a8d22 = L.marker(
+                [57.7859, 29.5345],
                 {}
-            ).addTo(marker_cluster_e53a102e64d84bd8990294d6c1c3725d);
+            ).addTo(marker_cluster_80916b53c6624459b234369991106910);
         
     
-            var icon_8eb7dbcb9569487c8da75291b5cc8db7 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            var icon_8eb974c354a744eba495a0f2c2bb3091 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
             );
-            marker_b6d53bee9c5e4b8787bf16efc10d7829.setIcon(icon_8eb7dbcb9569487c8da75291b5cc8db7);
+            marker_15d56ce028f64bfc80fd60a6513a8d22.setIcon(icon_8eb974c354a744eba495a0f2c2bb3091);
         
     
-        var popup_7ef4421157e24bc89e4df9bbadcc3b10 = L.popup({"maxWidth": "100%"});
+        var popup_df44b69f30f74991927ac35ca5569999 = L.popup({"maxWidth": "100%"});
 
         
-            var html_674ee53d00f84c7dab18398f9fd19299 = $(`<div id="html_674ee53d00f84c7dab18398f9fd19299" style="width: 100.0%; height: 100.0%;"><i>Green Woodland</i></div>`)[0];
-            popup_7ef4421157e24bc89e4df9bbadcc3b10.setContent(html_674ee53d00f84c7dab18398f9fd19299);
+            var html_63f74df66a0d45a8afc075da6d1ce3e4 = $(`<div id="html_63f74df66a0d45a8afc075da6d1ce3e4" style="width: 100.0%; height: 100.0%;">Псковская обл., г. Порхов, пр. Ленина</div>`)[0];
+            popup_df44b69f30f74991927ac35ca5569999.setContent(html_63f74df66a0d45a8afc075da6d1ce3e4);
         
 
-        marker_b6d53bee9c5e4b8787bf16efc10d7829.bindPopup(popup_7ef4421157e24bc89e4df9bbadcc3b10)
+        marker_15d56ce028f64bfc80fd60a6513a8d22.bindPopup(popup_df44b69f30f74991927ac35ca5569999)
         ;
 
         
     
     
-            marker_b6d53bee9c5e4b8787bf16efc10d7829.bindTooltip(
+            marker_15d56ce028f64bfc80fd60a6513a8d22.bindTooltip(
                 `<div>
-                     Click me!
+                     СУРГУТНЕФТЕГАЗ
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_1abdbbf1d39649fc81a11d458f76897d = L.marker(
-                [55.0095, 82.6673],
+            var marker_4979f68114bf4816aa9c3c5721d70d76 = L.marker(
+                [56.038, 29.8899],
                 {}
-            ).addTo(marker_cluster_e53a102e64d84bd8990294d6c1c3725d);
+            ).addTo(marker_cluster_80916b53c6624459b234369991106910);
         
     
-        var popup_3fd57998345a44ba9011f5c1e60c3b6e = L.popup({"maxWidth": "100%"});
+            var icon_fec4e1eee26c46f18f44531af887771c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4979f68114bf4816aa9c3c5721d70d76.setIcon(icon_fec4e1eee26c46f18f44531af887771c);
+        
+    
+        var popup_d64d3faa3df149849574c649cae49dc3 = L.popup({"maxWidth": "100%"});
 
         
-            var html_92ac1e644dbf40d4bdd6b3f8f1585899 = $(`<div id="html_92ac1e644dbf40d4bdd6b3f8f1585899" style="width: 100.0%; height: 100.0%;"><b>Tolmachevo Airport</b></div>`)[0];
-            popup_3fd57998345a44ba9011f5c1e60c3b6e.setContent(html_92ac1e644dbf40d4bdd6b3f8f1585899);
+            var html_e804269a101b4972ac006c12930c9941 = $(`<div id="html_e804269a101b4972ac006c12930c9941" style="width: 100.0%; height: 100.0%;">Псковская обл., г. Невель, ул. Ленкоммуны, д. 81</div>`)[0];
+            popup_d64d3faa3df149849574c649cae49dc3.setContent(html_e804269a101b4972ac006c12930c9941);
         
 
-        marker_1abdbbf1d39649fc81a11d458f76897d.bindPopup(popup_3fd57998345a44ba9011f5c1e60c3b6e)
+        marker_4979f68114bf4816aa9c3c5721d70d76.bindPopup(popup_d64d3faa3df149849574c649cae49dc3)
         ;
 
         
     
     
-                var lat_lng_popup_4efbdca14a0947ddba788284de79d879 = L.popup();
+            marker_4979f68114bf4816aa9c3c5721d70d76.bindTooltip(
+                `<div>
+                     СУРГУТНЕФТЕГАЗ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8229585af0004c72b77c6711940b2cdf = L.marker(
+                [55.9871, 29.9572],
+                {}
+            ).addTo(marker_cluster_80916b53c6624459b234369991106910);
+        
+    
+            var icon_95acaf56027a4463a7b5d250ef28ff83 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8229585af0004c72b77c6711940b2cdf.setIcon(icon_95acaf56027a4463a7b5d250ef28ff83);
+        
+    
+        var popup_394504d651af42fb81b9ccb47fec7176 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c976906fe7b4941b15c4bbb5c5b4ea5 = $(`<div id="html_5c976906fe7b4941b15c4bbb5c5b4ea5" style="width: 100.0%; height: 100.0%;">Псковская обл., Невельский р-н, д. Мигушино</div>`)[0];
+            popup_394504d651af42fb81b9ccb47fec7176.setContent(html_5c976906fe7b4941b15c4bbb5c5b4ea5);
+        
+
+        marker_8229585af0004c72b77c6711940b2cdf.bindPopup(popup_394504d651af42fb81b9ccb47fec7176)
+        ;
+
+        
+    
+    
+            marker_8229585af0004c72b77c6711940b2cdf.bindTooltip(
+                `<div>
+                     СУРГУТНЕФТЕГАЗ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4ffdcd40205b448fb5156651cbba76ad = L.marker(
+                [55.7507, 30.7509],
+                {}
+            ).addTo(marker_cluster_80916b53c6624459b234369991106910);
+        
+    
+            var icon_c808cea773dc40f598d28d971ededade = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4ffdcd40205b448fb5156651cbba76ad.setIcon(icon_c808cea773dc40f598d28d971ededade);
+        
+    
+        var popup_37bfb31d3b764e3fa3d3a69a9a291983 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4635518a6ad54b779a91371004fa810a = $(`<div id="html_4635518a6ad54b779a91371004fa810a" style="width: 100.0%; height: 100.0%;">Псковская обл., п. Усвяты, ул. Велижская</div>`)[0];
+            popup_37bfb31d3b764e3fa3d3a69a9a291983.setContent(html_4635518a6ad54b779a91371004fa810a);
+        
+
+        marker_4ffdcd40205b448fb5156651cbba76ad.bindPopup(popup_37bfb31d3b764e3fa3d3a69a9a291983)
+        ;
+
+        
+    
+    
+            marker_4ffdcd40205b448fb5156651cbba76ad.bindTooltip(
+                `<div>
+                     СУРГУТНЕФТЕГАЗ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1290cf10597b4890ae8720ac0f587f45 = L.marker(
+                [56.31079, 30.51461],
+                {}
+            ).addTo(marker_cluster_80916b53c6624459b234369991106910);
+        
+    
+            var icon_8186c8faccfc4969a2c6e7c98d7cc49e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "truck", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1290cf10597b4890ae8720ac0f587f45.setIcon(icon_8186c8faccfc4969a2c6e7c98d7cc49e);
+        
+    
+        var popup_bc6b5c0089cc4c01b6151a8cde53d152 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_43d9cc1e8a3a41ac9aa77ae79e61a61a = $(`<div id="html_43d9cc1e8a3a41ac9aa77ae79e61a61a" style="width: 100.0%; height: 100.0%;">г. Великие Луки, Октябрьский пр.</div>`)[0];
+            popup_bc6b5c0089cc4c01b6151a8cde53d152.setContent(html_43d9cc1e8a3a41ac9aa77ae79e61a61a);
+        
+
+        marker_1290cf10597b4890ae8720ac0f587f45.bindPopup(popup_bc6b5c0089cc4c01b6151a8cde53d152)
+        ;
+
+        
+    
+    
+            marker_1290cf10597b4890ae8720ac0f587f45.bindTooltip(
+                `<div>
+                     СУРГУТНЕФТЕГАЗ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_261aecc79e7747efa91feb11650c7cdb = L.marker(
+                [56.3515, 30.4983],
+                {}
+            ).addTo(marker_cluster_80916b53c6624459b234369991106910);
+        
+    
+            var icon_b6f7bf9db21b48ec9f0f20c69d5e6927 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "truck", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_261aecc79e7747efa91feb11650c7cdb.setIcon(icon_b6f7bf9db21b48ec9f0f20c69d5e6927);
+        
+    
+        var popup_74f5b1eefa5746c58700dc786b3f1a17 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9484c02054484fc5b2f96ee7365fb1ac = $(`<div id="html_9484c02054484fc5b2f96ee7365fb1ac" style="width: 100.0%; height: 100.0%;">г. Великие Луки, ул. Горицкая</div>`)[0];
+            popup_74f5b1eefa5746c58700dc786b3f1a17.setContent(html_9484c02054484fc5b2f96ee7365fb1ac);
+        
+
+        marker_261aecc79e7747efa91feb11650c7cdb.bindPopup(popup_74f5b1eefa5746c58700dc786b3f1a17)
+        ;
+
+        
+    
+    
+            marker_261aecc79e7747efa91feb11650c7cdb.bindTooltip(
+                `<div>
+                     СУРГУТНЕФТЕГАЗ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_28ed75700a5741f396b321b5b93e1179 = L.marker(
+                [56.2796, 30.9744],
+                {}
+            ).addTo(marker_cluster_80916b53c6624459b234369991106910);
+        
+    
+            var icon_a7201cc4c882416890dc037264a6cda0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_28ed75700a5741f396b321b5b93e1179.setIcon(icon_a7201cc4c882416890dc037264a6cda0);
+        
+    
+        var popup_5831b524b53146c8ab74a6732c8977be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c0d4beb691d4cb8af65d855aa721abf = $(`<div id="html_4c0d4beb691d4cb8af65d855aa721abf" style="width: 100.0%; height: 100.0%;">Псковская обл., п.Кунья,435 км трассы Москва-Рига</div>`)[0];
+            popup_5831b524b53146c8ab74a6732c8977be.setContent(html_4c0d4beb691d4cb8af65d855aa721abf);
+        
+
+        marker_28ed75700a5741f396b321b5b93e1179.bindPopup(popup_5831b524b53146c8ab74a6732c8977be)
+        ;
+
+        
+    
+    
+            marker_28ed75700a5741f396b321b5b93e1179.bindTooltip(
+                `<div>
+                     СУРГУТНЕФТЕГАЗ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fa07c0cf54ba477f983503d984cdff00 = L.marker(
+                [57.801721, 28.357631],
+                {}
+            ).addTo(marker_cluster_80916b53c6624459b234369991106910);
+        
+    
+            var icon_14aafe680a244bb3a314d63e6e3c4678 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "truck", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fa07c0cf54ba477f983503d984cdff00.setIcon(icon_14aafe680a244bb3a314d63e6e3c4678);
+        
+    
+        var popup_b3d5a4657ca74e7990062b47cee5e0a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_303942ab15104bbca2b04b0dc147b78f = $(`<div id="html_303942ab15104bbca2b04b0dc147b78f" style="width: 100.0%; height: 100.0%;">г. Псков, ул. Вокзальная, 19а</div>`)[0];
+            popup_b3d5a4657ca74e7990062b47cee5e0a4.setContent(html_303942ab15104bbca2b04b0dc147b78f);
+        
+
+        marker_fa07c0cf54ba477f983503d984cdff00.bindPopup(popup_b3d5a4657ca74e7990062b47cee5e0a4)
+        ;
+
+        
+    
+    
+            marker_fa07c0cf54ba477f983503d984cdff00.bindTooltip(
+                `<div>
+                     СУРГУТНЕФТЕГАЗ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f6a5044d471d45fe8319d3ecbfdb5748 = L.marker(
+                [56.9785, 29.8717],
+                {}
+            ).addTo(marker_cluster_80916b53c6624459b234369991106910);
+        
+    
+            var icon_eb044e9d05ce4c1dade419071b6b0d9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "truck", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f6a5044d471d45fe8319d3ecbfdb5748.setIcon(icon_eb044e9d05ce4c1dade419071b6b0d9c);
+        
+    
+        var popup_b17d1a4eaeab4497aabda1cce24c5640 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f45b75bb1bba47608e042355421b30f7 = $(`<div id="html_f45b75bb1bba47608e042355421b30f7" style="width: 100.0%; height: 100.0%;">Псковская обл., п.г.т. Бежаницы, ул. Советская</div>`)[0];
+            popup_b17d1a4eaeab4497aabda1cce24c5640.setContent(html_f45b75bb1bba47608e042355421b30f7);
+        
+
+        marker_f6a5044d471d45fe8319d3ecbfdb5748.bindPopup(popup_b17d1a4eaeab4497aabda1cce24c5640)
+        ;
+
+        
+    
+    
+            marker_f6a5044d471d45fe8319d3ecbfdb5748.bindTooltip(
+                `<div>
+                     СУРГУТНЕФТЕГАЗ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_54536522b14d459a8691e1da89667c28 = L.marker(
+                [57.84627, 28.29449],
+                {}
+            ).addTo(marker_cluster_80916b53c6624459b234369991106910);
+        
+    
+            var icon_75cbfaa14d8e460b954603bc8071cb46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "truck", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_54536522b14d459a8691e1da89667c28.setIcon(icon_75cbfaa14d8e460b954603bc8071cb46);
+        
+    
+        var popup_e6638c61ee9b4a71ab1bf43d06b4efaa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c2fa636f8ce44d1aa790776e92219af = $(`<div id="html_0c2fa636f8ce44d1aa790776e92219af" style="width: 100.0%; height: 100.0%;">г. Псков, Гдовское шоссе (1 - й км а/д Псков - Гдов)</div>`)[0];
+            popup_e6638c61ee9b4a71ab1bf43d06b4efaa.setContent(html_0c2fa636f8ce44d1aa790776e92219af);
+        
+
+        marker_54536522b14d459a8691e1da89667c28.bindPopup(popup_e6638c61ee9b4a71ab1bf43d06b4efaa)
+        ;
+
+        
+    
+    
+            marker_54536522b14d459a8691e1da89667c28.bindTooltip(
+                `<div>
+                     СУРГУТНЕФТЕГАЗ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b1a9d78475c84b3cb0938f81d14ce070 = L.marker(
+                [57.8109, 28.2835],
+                {}
+            ).addTo(marker_cluster_80916b53c6624459b234369991106910);
+        
+    
+            var icon_e4c90e753e0940b5925786940d9dddf9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "truck", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b1a9d78475c84b3cb0938f81d14ce070.setIcon(icon_e4c90e753e0940b5925786940d9dddf9);
+        
+    
+        var popup_7ca666dfac3849dfa240d46f37f0fc75 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a21aa9a97d3c475a8396d64c63f61bb1 = $(`<div id="html_a21aa9a97d3c475a8396d64c63f61bb1" style="width: 100.0%; height: 100.0%;">г. Псков, Рижский проспект, д. 86</div>`)[0];
+            popup_7ca666dfac3849dfa240d46f37f0fc75.setContent(html_a21aa9a97d3c475a8396d64c63f61bb1);
+        
+
+        marker_b1a9d78475c84b3cb0938f81d14ce070.bindPopup(popup_7ca666dfac3849dfa240d46f37f0fc75)
+        ;
+
+        
+    
+    
+            marker_b1a9d78475c84b3cb0938f81d14ce070.bindTooltip(
+                `<div>
+                     СУРГУТНЕФТЕГАЗ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_124dd986f0bf4e8e9debb7cc34a827ad = L.marker(
+                [55.8875, 29.9654],
+                {}
+            ).addTo(marker_cluster_80916b53c6624459b234369991106910);
+        
+    
+            var icon_e274e94e284a44deacdcb64e1b20d574 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "truck", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_124dd986f0bf4e8e9debb7cc34a827ad.setIcon(icon_e274e94e284a44deacdcb64e1b20d574);
+        
+    
+        var popup_0edc62ccf7ae40bcb8e085b175f446dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b66688c8532848b8813d78fea44faf30 = $(`<div id="html_b66688c8532848b8813d78fea44faf30" style="width: 100.0%; height: 100.0%;">Псковская обл., Невельский район, д. Блинки (538 км а/д СПб - Киев)</div>`)[0];
+            popup_0edc62ccf7ae40bcb8e085b175f446dd.setContent(html_b66688c8532848b8813d78fea44faf30);
+        
+
+        marker_124dd986f0bf4e8e9debb7cc34a827ad.bindPopup(popup_0edc62ccf7ae40bcb8e085b175f446dd)
+        ;
+
+        
+    
+    
+            marker_124dd986f0bf4e8e9debb7cc34a827ad.bindTooltip(
+                `<div>
+                     СУРГУТНЕФТЕГАЗ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4190c4fe5643434a9e9282d90bef4f17 = L.marker(
+                [57.0285, 29.367],
+                {}
+            ).addTo(marker_cluster_80916b53c6624459b234369991106910);
+        
+    
+            var icon_2e72c0007e54472cab766cc46dba296f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4190c4fe5643434a9e9282d90bef4f17.setIcon(icon_2e72c0007e54472cab766cc46dba296f);
+        
+    
+        var popup_1788abe3bbe943d6b325b045dbd1c1d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04bb5dccb114489c9f97ae872a911136 = $(`<div id="html_04bb5dccb114489c9f97ae872a911136" style="width: 100.0%; height: 100.0%;">Псковская обл., г. Новоржев, ул.Пушкина, д. 149</div>`)[0];
+            popup_1788abe3bbe943d6b325b045dbd1c1d2.setContent(html_04bb5dccb114489c9f97ae872a911136);
+        
+
+        marker_4190c4fe5643434a9e9282d90bef4f17.bindPopup(popup_1788abe3bbe943d6b325b045dbd1c1d2)
+        ;
+
+        
+    
+    
+            marker_4190c4fe5643434a9e9282d90bef4f17.bindTooltip(
+                `<div>
+                     СУРГУТНЕФТЕГАЗ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e02db35c55e47408e2e1dedf4da6be0 = L.marker(
+                [57.67494, 27.55364],
+                {}
+            ).addTo(marker_cluster_80916b53c6624459b234369991106910);
+        
+    
+            var icon_5631b61e33b94f09ae2db12e5a4a27a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "truck", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9e02db35c55e47408e2e1dedf4da6be0.setIcon(icon_5631b61e33b94f09ae2db12e5a4a27a1);
+        
+    
+        var popup_b59e783eff93458f9dfe7ffc1481f33d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b6e82a62f954ec790a946e6c0a709f6 = $(`<div id="html_6b6e82a62f954ec790a946e6c0a709f6" style="width: 100.0%; height: 100.0%;">Псковская обл., п Шумилкино, А212, Псков-Рига, 50 км от Пскова, справа</div>`)[0];
+            popup_b59e783eff93458f9dfe7ffc1481f33d.setContent(html_6b6e82a62f954ec790a946e6c0a709f6);
+        
+
+        marker_9e02db35c55e47408e2e1dedf4da6be0.bindPopup(popup_b59e783eff93458f9dfe7ffc1481f33d)
+        ;
+
+        
+    
+    
+            marker_9e02db35c55e47408e2e1dedf4da6be0.bindTooltip(
+                `<div>
+                     СУРГУТНЕФТЕГАЗ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb06e28cb4ed4072bce0c67fe922aa72 = L.marker(
+                [57.5391, 29.9706],
+                {}
+            ).addTo(marker_cluster_80916b53c6624459b234369991106910);
+        
+    
+            var icon_9abe7f6b3a684af0b6a2477d1695e1d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_eb06e28cb4ed4072bce0c67fe922aa72.setIcon(icon_9abe7f6b3a684af0b6a2477d1695e1d8);
+        
+    
+        var popup_1693d6d1b8a449aba34bad89cadaa8a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e5a0a12d4104eb185d670ac9cd42dd1 = $(`<div id="html_1e5a0a12d4104eb185d670ac9cd42dd1" style="width: 100.0%; height: 100.0%;">Псковская обл., п.г.т. Дедовичи, ул.Бундзена</div>`)[0];
+            popup_1693d6d1b8a449aba34bad89cadaa8a8.setContent(html_1e5a0a12d4104eb185d670ac9cd42dd1);
+        
+
+        marker_eb06e28cb4ed4072bce0c67fe922aa72.bindPopup(popup_1693d6d1b8a449aba34bad89cadaa8a8)
+        ;
+
+        
+    
+    
+            marker_eb06e28cb4ed4072bce0c67fe922aa72.bindTooltip(
+                `<div>
+                     СУРГУТНЕФТЕГАЗ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+                var lat_lng_popup_9d3de926fa5d45bf883b3f87ebed7dae = L.popup();
                 function latLngPop(e) {
-                    lat_lng_popup_4efbdca14a0947ddba788284de79d879
+                    lat_lng_popup_9d3de926fa5d45bf883b3f87ebed7dae
                         .setLatLng(e.latlng)
                         .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
                                     "<br>Longitude: " + e.latlng.lng.toFixed(4))
-                        .openOn(map_f81fdacdb4dd459587a487e78b857c13);
+                        .openOn(map_deb708e466a24b0e9b684b1ca17c7d8e);
                     }
-                map_f81fdacdb4dd459587a487e78b857c13.on('click', latLngPop);
+                map_deb708e466a24b0e9b684b1ca17c7d8e.on('click', latLngPop);
             
 </script>
