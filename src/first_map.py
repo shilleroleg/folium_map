@@ -38,8 +38,10 @@ def read_gas_list(file_name):
 
         lon = ws.cell(cur_row, 9 + xlsx_col).value
         lat = ws.cell(cur_row, 10 + xlsx_col).value
-        if lon == 0 or lat == 0 or lon == [] \
-           or lon < 57 or lon > 180:
+        ai92 = ws.cell(cur_row, 13 + xlsx_col).value
+        ai95 = ws.cell(cur_row, 14 + xlsx_col).value
+        if lon == 0 or lat == 0 or lon == [] or lat == [] \
+                or ai92 == "-" or ai95 == "-":
             cur_row += 1
             continue
         else:
@@ -56,8 +58,8 @@ def read_gas_list(file_name):
 
 
 def create_map(brand, longitude, latitude, address, diesel):
-    # Latitude: 54.9690  долгота
-    # Longitude: 82.8843 широта
+    # Latitude - долгота
+    # Longitude - широта
 
     # Create base map
     mp = folium.Map(location=[54.9893, 82.9070],
@@ -69,14 +71,15 @@ def create_map(brand, longitude, latitude, address, diesel):
     marker_cluster = MarkerCluster().add_to(mp)
 
     for i in range(len(longitude)):
-        # Plot markers and add to marker_cluster
-        icon_name = 'truck' if diesel[i] else 'car'
+        if longitude[i] >= 56:                          # Сохраняем Сибирь и Восток
+            # Plot markers and add to marker_cluster
+            icon_name = 'truck' if diesel[i] else 'car'
 
-        folium.Marker(location=[latitude[i], longitude[i]],
-                      popup=address[i],
-                      tooltip=brand[i],
-                      icon=folium.Icon(icon=icon_name, prefix='fa')).add_to(marker_cluster)
-        # more icons on https://fontawesome.com/v4.7.0/icons/
+            folium.Marker(location=[latitude[i], longitude[i]],
+                          popup=address[i],
+                          tooltip=brand[i],
+                          icon=folium.Icon(icon=icon_name, prefix='fa')).add_to(marker_cluster)
+            # more icons on https://fontawesome.com/v4.7.0/icons/
 
     # Enable lat/lon popovers
     mp.add_child(folium.LatLngPopup())
